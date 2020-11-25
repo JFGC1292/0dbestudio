@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+nav {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(0, 174, 239, 1) 40%);
+    display: flex;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navAnimada {
+    transition: all 0.5s;
+    animation-name: navArriba;
+    animation-duration: 1s;
+}
+
+@keyframes navArriba {
+    from {
+    transform: translateY(-100%);
+    opacity: 0;
+    }
+
+    to {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+    li {
+    padding: 0 0.7rem;
+    transition: all 0.2s;
+    margin-right: 2rem;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li:hover {
+    transform: scale(1.3, 1.3);
+}
+
+main {
+    min-height: 100vh;
+}
+
+form {
+    color: white;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.titulo {
+    font-size: larger;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.parrafo {
+    color: white;
+    padding-bottom: 1rem;
+}
+
+hr {
+    background-color: #00aeef;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    color: white;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(-45deg, rgba(2, 0, 36, 1) 0%, rgba(0, 174, 239, 1) 40%);
+    font-size: larger;
+    max-width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icons {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div ul li {
+    list-style: none;
+}
+
+.listaHome {
+    color: white;
+    text-align: center;
+    margin: 2%;
+
+    li {
+    font-size: larger;
+    }
+}
+
+.divIndex1 {
+    background-image: linear-gradient(to right, black, rgb(77, 77, 77));
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    width: 100%;
+
+    div {
+    &:nth-child(1) {
+        color: #fff;
+        text-align: center;
+        width: 50%;
+
+        h2 {
+        margin-bottom: 1rem;
+        }
+
+        p {
+        margin-bottom: .5rem;
+        }
+
+        a button {
+        color: #fff;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        border-radius: 3rem;
+        background-color: #00AEEF;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        cursor: pointer;
+        transition: all .25s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+        &:nth-child(2) {
+            background: url('/Recursos/consola.jpg') no-repeat center center;
+            background-size: cover;
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+.divIndex2 {
+    background-image: linear-gradient(to left, black, rgb(77, 77, 77));
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    width: 100%;
+
+    div {
+        &:nth-child(1) {
+            background: url('/Recursos/fondo.jpg') no-repeat center center;
+            background-size: cover;
+            width: 50%;
+            height: 100%;
+    }
+
+        &:nth-child(2) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            color: #fff;
+            text-align: center;
+            width: 50%;
+
+            h2 {
+                flex: 0 0 100%;
+                text-align: center;
+            }
+
+            ul li {
+                padding: .10rem 0;
+            }
+        }
+    }
+}
+
+#grillaTV {
+    display: grid;
+    width: 100vw;
+    grid-template-areas: "titulo titulo titulo" "contenedor1 contenedor2 contenedor3" "contenedor4 contenedor5 contenedor6";
+    justify-content: center;
+    align-content: center;
+}
+
+#tituloTV {
+    grid-area: titulo;
+    justify-self: center;
+}
+
+.clienteTV {
+    grid-area: auto;
+    display: grid;
+    grid-template-areas: "cliente" "descripcion" "video";
+    justify-content: center;
+    align-content: center;
+}
+
+.marcaTV {
+    color: white;
+    grid-area: cliente;
+    justify-self: center;
+}
+
+.descripcionTV {
+    color: white;
+    grid-area: descripcion;
+    justify-self: center;
+}
+
+.videoTV {
+    color: white;
+    grid-area: video;
+    justify-self: center;
+}
+
+.contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 5vh;
+    column-gap: 5vh;
+    padding: 5vh;
+}
+
+.conocenos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .divIndex1 {
+        flex-flow: column nowrap;
+
+        div {
+            &:nth-child(1) {
+                width: 100%;
+                padding: 2.5rem 0;
+            }
+
+        &:nth-child(2) {
+            width: 100%;
+            height: 50%;
+            }
+        }
+    }
+
+    .divIndex2 {
+        flex-flow: column wrap;
+    }
+
+    nav ul li {
+        margin-right: 1rem;
+    }
+
+    footer {
+        flex-flow: column nowrap;
+
+        div:nth-child(1) {
+            order: 2;
+        }
+    }
+
+    #icons {
+        order: 1;
+    }
+
+    nav {
+        flex-flow: column nowrap;
+        justify-content: center;
+
+        a {
+            margin-bottom: 1rem;
+        }
+    }
+}
