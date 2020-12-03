@@ -107,6 +107,10 @@ footer {
 #icons {
     display: flex;
     flex-flow: row nowrap;
+
+    i {
+        margin: 0rem .5rem;
+    }
 }
 
 div ul li {
@@ -210,43 +214,42 @@ div ul li {
     }
 }
 
-#grillaTV {
-    display: grid;
-    width: 100vw;
-    grid-template-areas: "titulo titulo titulo" "contenedor1 contenedor2 contenedor3" "contenedor4 contenedor5 contenedor6";
+.tituloTvRadio {
+    text-align: center;
+    color: white;
+}
+
+.containerTvRadio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 1rem 0rem;
+}
+
+.clienteTvRadio {
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-content: center;
 }
 
-#tituloTV {
-    grid-area: titulo;
-    justify-self: center;
-}
-
-.clienteTV {
-    grid-area: auto;
-    display: grid;
-    grid-template-areas: "cliente" "descripcion" "video";
-    justify-content: center;
-    align-content: center;
-}
-
-.marcaTV {
+.marcaTvRadio {
     color: white;
-    grid-area: cliente;
     justify-self: center;
+    align-self: center;
 }
 
-.descripcionTV {
+.descripcionTvRadio {
     color: white;
-    grid-area: descripcion;
     justify-self: center;
+    align-self: center;
 }
 
-.videoTV {
+.videoTvRadio {
     color: white;
-    grid-area: video;
     justify-self: center;
+    align-self: center;
 }
 
 .contacto {
