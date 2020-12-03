@@ -370,6 +370,7 @@ div ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -394,7 +395,14 @@ div ul li {
             flex-flow: column wrap;
   }
   nav ul li {
-    margin-right: 1rem;
+    font-size: smaller;
+    margin: 0rem;
+  }
+  .tituloTvRadio {
+    font-size: large;
+  }
+  iframe {
+    width: 100%;
   }
   footer {
     -webkit-box-orient: vertical;
@@ -406,6 +414,7 @@ div ul li {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    font-size: smaller;
   }
   #icons {
     -webkit-box-ordinal-group: 2;
