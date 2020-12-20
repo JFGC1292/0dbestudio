@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: black;
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(#323232));
+  background-image: linear-gradient(to right, black, #323232);
 }
 
 nav {
@@ -393,6 +394,12 @@ div ul li {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+  }
+  .divIndex2 h2 {
+    font-size: larger;
+  }
+  .divIndex2 ul li {
+    font-size: smaller;
   }
   nav ul li {
     font-size: smaller;

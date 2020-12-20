@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-image: linear-gradient(to right, black, rgb(50, 50, 50));
 }
 
 nav {
@@ -287,6 +287,14 @@ div ul li {
 
     .divIndex2 {
         flex-flow: column wrap;
+
+        h2 {
+            font-size: larger;
+        }
+
+        ul li {
+            font-size: smaller;
+        }
     }
 
     nav ul li {
