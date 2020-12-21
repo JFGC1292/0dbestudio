@@ -374,6 +374,8 @@ div ul li {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 1rem;
 }
 
@@ -391,8 +393,6 @@ div ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 25%;
-  height: 25%;
 }
 
 .fotosConocenos img {

@@ -270,6 +270,7 @@ div ul li {
 .contenedorConocenos {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
     padding: 1rem;
 }
 
@@ -278,8 +279,6 @@ div ul li {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    width: 25%;
-    height: 25%;
 
     img {
         border: 1px solid white;
