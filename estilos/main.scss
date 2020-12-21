@@ -261,11 +261,47 @@ div ul li {
     padding: 5vh;
 }
 
-.conocenos {
+.quienesSomos {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+.contenedorConocenos {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     padding: 1rem;
+}
+
+.fotosConocenos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 25%;
+
+    img {
+        border: 1px solid white;
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    h4 {
+        color: white;
+    }
+}
+
+.historia {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+
+.staff {
+    color: white;
+    text-align: center;
+    margin: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -308,6 +344,20 @@ div ul li {
 
     iframe {
         width: 100%;
+    }
+
+    .contenedorConocenos {
+        flex-flow: column wrap;
+    }
+
+    .fotosConocenos {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1rem;
     }
 
     footer {

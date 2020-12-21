@@ -360,7 +360,13 @@ div ul li {
   padding: 5vh;
 }
 
-.conocenos {
+.quienesSomos {
+  color: white;
+  text-align: center;
+  margin: 1rem;
+}
+
+.contenedorConocenos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,10 +374,47 @@ div ul li {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  padding: 1rem;
+}
+
+.fotosConocenos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  height: 25%;
+}
+
+.fotosConocenos img {
+  border: 1px solid white;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.fotosConocenos h4 {
+  color: white;
+}
+
+.historia {
+  color: white;
+  text-align: center;
+  margin: 1rem;
+}
+
+.staff {
+  color: white;
+  text-align: center;
+  margin: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -410,6 +453,30 @@ div ul li {
   }
   iframe {
     width: 100%;
+  }
+  .contenedorConocenos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .fotosConocenos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
   }
   footer {
     -webkit-box-orient: vertical;
