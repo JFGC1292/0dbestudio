@@ -278,7 +278,6 @@ div ul li {
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 1rem;
-    overflow: hidden;
 }
 
 .fotosConocenos {
@@ -286,12 +285,12 @@ div ul li {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    transition: all .2s;
 
     img {
         border: 1px solid white;
         margin: 0.5rem;
         border-radius: 0.5rem;
+        transition: all .2s;
     }
 
     h4 {
@@ -299,8 +298,8 @@ div ul li {
     }
 }
 
-.fotosConocenos:hover {
-    transform: scale(1.2);
+.fotosConocenos img:hover {
+    transform: scale(1.15);
 }
 
 .historia {
