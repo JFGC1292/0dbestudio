@@ -377,6 +377,7 @@ div ul li {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 1rem;
+  overflow: hidden;
 }
 
 .fotosConocenos {
@@ -393,6 +394,8 @@ div ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .fotosConocenos img {
@@ -405,16 +408,53 @@ div ul li {
   color: white;
 }
 
+.fotosConocenos:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .historia {
   color: white;
-  text-align: center;
+  text-align: left;
   margin: 1rem;
 }
 
 .staff {
   color: white;
-  text-align: center;
+  text-align: left;
   margin: 1rem;
+}
+
+.confianTitulo {
+  color: white;
+  text-align: center;
+  margin: 2rem;
+}
+
+.confianClientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.confianAnimado {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.confianAnimado img {
+  border-radius: 0.5rem;
+}
+
+.confianAnimado:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
@@ -506,6 +546,29 @@ div ul li {
   }
   nav a {
     margin-bottom: 1rem;
+  }
+  .confianClientes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .confianAnimado {
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    padding: 1rem;
+  }
+  .confianAnimado img {
+    border-radius: 0.5rem;
+  }
+  .confianAnimado:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 /*# sourceMappingURL=main.css.map */

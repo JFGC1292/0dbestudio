@@ -272,6 +272,7 @@ div ul li {
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 1rem;
+    overflow: hidden;
 }
 
 .fotosConocenos {
@@ -279,6 +280,7 @@ div ul li {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    transition: all .2s;
 
     img {
         border: 1px solid white;
@@ -291,16 +293,44 @@ div ul li {
     }
 }
 
+.fotosConocenos:hover {
+    transform: scale(1.2);
+}
+
 .historia {
     color: white;
-    text-align: center;
+    text-align: left;
     margin: 1rem;
 }
 
 .staff {
     color: white;
-    text-align: center;
+    text-align: left;
     margin: 1rem;
+}
+
+.confianTitulo {
+    color: white;
+    text-align: center;
+    margin: 2rem;
+}
+
+.confianClientes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.confianAnimado {
+    transition: all .2s;
+
+    img {
+        border-radius: 0.5rem;
+    }
+}
+
+.confianAnimado:hover {
+    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
@@ -379,5 +409,23 @@ div ul li {
         a {
             margin-bottom: 1rem;
         }
+    }
+    .confianClientes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+    .confianAnimado {
+        transition: all .2s;
+        padding: 1rem;
+    
+        img {
+            border-radius: 0.5rem;
+        }
+    }
+    
+    .confianAnimado:hover {
+        transform: scale(1.05);
     }
 }
