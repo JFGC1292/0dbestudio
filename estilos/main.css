@@ -290,6 +290,7 @@ div ul li {
 .tituloTvRadio {
   text-align: center;
   color: white;
+  margin: 1rem;
 }
 
 .containerTvRadio {
