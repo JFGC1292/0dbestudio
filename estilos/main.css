@@ -156,6 +156,11 @@ footer {
   margin: 0rem .5rem;
 }
 
+i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 div ul li {
   list-style: none;
 }
