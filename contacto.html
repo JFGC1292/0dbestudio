@@ -20,9 +20,15 @@
             <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
+    <div class="contactoInfo">
+        <h3><strong>Dirección:</strong> Gascón 1194</h3>
+        <h3><strong>Ciudad:</strong> CABA</h3>
+        <h3><strong>Teléfono:</strong> (011) 4861-7793</h3>
+        <h3><strong>Mail:</strong> 0dbestudio@gmail.com</h3>
+    </div>
     <main class="contacto">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13137.225687774799!2d-58.4232741!3d-34.5964123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3b99aa4ffa4e1f6!2s0dB%20SOUND%20PRODUCTION!5e0!3m2!1ses-419!2sar!4v1603400284510!5m2!1ses-419!2sar" width="500vh" height="500vh" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <form action="" class="formulario">
+        <form action="" class="formularioDesktop">
             <fieldset>
                 <legend>¡Dejanos tu consulta!</legend>
                 <input type="text" placeholder="Nombre" size="50%">
@@ -40,7 +46,31 @@
                 <span>¿Desea recibir nuestro newsletter?</span>
                 <input type="checkbox">
                 <br>
-                <textarea name="" id="" cols="50" rows="16" placeholder="Dejanos tus comentarios"></textarea>
+                <textarea name="" id="" cols="50" rows="13" placeholder="Dejanos tus comentarios"></textarea>
+                <br>
+                <input type="reset" value=" Limpiar formulario ">
+                <input type="submit" value=" Enviar formulario ">
+            </fieldset>
+        </form>
+        <form action="" class="formularioMobile">
+            <fieldset>
+                <legend>¡Dejanos tu consulta!</legend>
+                <input type="text" placeholder="Nombre" size="50%">
+                <br>
+                <input type="text" placeholder="Apellido" size="50%">
+                <br>
+                <input type="email" placeholder="Correo electrónico" size="50%">
+                <br>
+                <label for="estadoCivil">Estado civil</label>
+                <select name="" id="estadoCivil">
+                    <option value="">Casado/a</option>
+                    <option value="">Soltero/a</option>
+                </select>
+                <br>
+                <span>¿Desea recibir nuestro newsletter?</span>
+                <input type="checkbox">
+                <br>
+                <textarea id="" cols="50" rows="5" placeholder="Dejanos tus comentarios"></textarea>
                 <br>
                 <input type="reset" value=" Limpiar formulario ">
                 <input type="submit" value=" Enviar formulario ">

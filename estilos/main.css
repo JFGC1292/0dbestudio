@@ -98,10 +98,6 @@ main {
   min-height: 100vh;
 }
 
-form {
-  color: white;
-}
-
 .logo {
   width: 5rem;
 }
@@ -350,6 +346,24 @@ div ul li {
       align-self: center;
 }
 
+.contactoInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+}
+
+.contactoInfo h3 {
+  color: white;
+  margin: 1rem;
+}
+
 .contacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,6 +372,7 @@ div ul li {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -365,6 +380,27 @@ div ul li {
   -webkit-column-gap: 5vh;
           column-gap: 5vh;
   padding: 5vh;
+}
+
+.contacto iframe {
+  height: 70%;
+}
+
+.contacto form {
+  text-align: center;
+  color: white;
+}
+
+.contacto form textarea {
+  resize: none;
+}
+
+.contacto form input {
+  margin: .5rem;
+}
+
+.formularioMobile {
+  display: none;
 }
 
 .quienesSomos {
@@ -575,6 +611,29 @@ div ul li {
   .confianAnimado:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
+  }
+  .contactoInfo {
+    display: inline;
+    text-align: center;
+    margin: 0;
+  }
+  .contacto .formularioDesktop {
+    display: none;
+  }
+  .contacto .formularioMobile {
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+  }
+  .contacto .formularioMobile input {
+    margin: 0;
+  }
+  .contacto .formularioMobile textarea {
+    resize: none;
+  }
+  .contacto iframe {
+    height: 50%;
   }
 }
 /*# sourceMappingURL=main.css.map */
