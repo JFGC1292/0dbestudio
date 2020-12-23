@@ -480,6 +480,7 @@ div ul li {
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 1rem;
 }
 
 .confianAnimado {
