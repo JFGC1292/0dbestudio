@@ -312,11 +312,8 @@ div ul li {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  height: 40vh;
+  margin-bottom: 2rem;
 }
 
 .marcaTvRadio {

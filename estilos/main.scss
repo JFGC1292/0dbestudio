@@ -232,8 +232,8 @@ div ul li {
 .clienteTvRadio {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
+    height: 40vh;
+    margin-bottom: 2rem;
 }
 
 .marcaTvRadio {
