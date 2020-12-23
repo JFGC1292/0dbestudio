@@ -457,14 +457,14 @@ div ul li {
 
 .historia {
   color: white;
-  text-align: left;
-  margin: 1rem;
+  text-align: justify;
+  margin: 2rem 1rem;
 }
 
 .staff {
   color: white;
-  text-align: left;
-  margin: 1rem;
+  text-align: justify;
+  margin: 2rem 1rem;
 }
 
 .confianTitulo {
